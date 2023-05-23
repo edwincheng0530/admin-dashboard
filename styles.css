@@ -34,7 +34,7 @@ body, html {
     /* border: 1px red solid; */
 }
 
-.dashboard_container img {
+.dashboard_container img, .other_profile img{
     height: 30px;
     width: 30px;
 }
@@ -117,7 +117,7 @@ button {
     font-size: 16px;
 }
 
-.pfp {
+.pfp, .other_profile img{
     border-radius: 50%;
     background-color: lightgray;
 }
@@ -197,4 +197,14 @@ button {
     width: 100%;
     border: 1px lightgray solid
     
+}
+
+.other_profile {
+    display:flex;
+    gap: 8px;
+
+}
+
+#gray {
+    color: gray;
 }

@@ -4,28 +4,52 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body, html {
+    display: grid;
+    height: 100%;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
 
-.dashboard_container {
-    background-color: yellow;
+.dashboard_container{
+    background-color: rgb(3, 186, 252);
     display: grid;
-    grid-template-rows: repeat(auto-fill, 50px);
+    grid-template-rows: 50px 200px 120px;
+    /* grid-template-rows: repeat(auto-fill, min); */
     padding: 15px;
+    grid-gap: 30px;
 }
 
-.dashboard_container div {
+.dashboard_second, .dashboard_third {
+    display: grid;
+}
+
+.dashboard_div, .dashboard_second div, .dashboard_third div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* border: 1px red solid; */
 }
 
 .dashboard_container img {
+    height: 30px;
+    width: 30px;
+}
+
+.dashboard_div {
+    font-size: 25px;
+}
+
+.dashboard_div img{
     height: 40px;
     width: 40px;
 }
 
 .search_container {
-    background-color: green;
+    background-color: lightgray;
 }
 
 .search_container img {
@@ -33,19 +57,141 @@
     width: 40px;
 }
 
+.search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+    gap: 15px;
+    background-color: white;
+    /* border: 1px red solid; */
+}
+
+.left_search_bar, .right_search_bar {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-weight: bold;
+}
+
+input {
+    height: 28px;
+    width: 500px;
+    border-radius: 30px;
+    background-color: lightgray;
+    border: none
+}
+
+.profile_news {
+    display: flex;
+    padding: 15px 30px 15px 30px;
+    justify-content: space-between;
+    background-color: white;
+
+    /* border: 1px red solid; */
+}
+
+.profile_news img {
+    width: 60px;
+    height: 60px;
+}
+
+.left_profile_news, .right_profile_news {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* border: 1px blue solid; */
+}
+
+#username {
+    font-size: 26px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(3, 186, 252);
+    border-style: none;
+    color: white;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
 .pfp {
     border-radius: 50%;
-    background-color: white;
+    background-color: lightgray;
 }
 
 .main_content {
-    background-color: red;
+    display: flex;
+    background-color: lightgray;
+}
+
+#your_project {
+    margin-bottom: 20px;
+}
+
+.entire_project {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: repeat(3, max(100px, 30%));
+    grid-template-columns: repeat(2, max(100px, 50%));
+    row-gap: 30px;
+    column-gap: 15px;
+    /* padding: 15px; */
+    /* height: 75vh; */
+}
+
+.project {
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    padding: 30px 15px 15px 15px;
+    border-radius: 14px;
+
+}
+
+.links {
+    display: flex;
+    justify-content: end;
+    gap: 4px;
+    margin-top: 20px;
+}
+
+.right_main_content {
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .announcements {
-    background-color: gray;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 14px;
+    background-color: white;
 }
 
 .trending {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 14px;
+    background-color: white;
+}
+
+#separator {
+    width: 100%;
+    border: 1px lightgray solid
+    
 }

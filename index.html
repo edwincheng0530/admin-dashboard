@@ -11,93 +11,135 @@
     <div class="container">
 
         <div class="dashboard_container">
-            <div>
+            <div class="dashboard_div">
                 <img src="assets/view-dashboard.svg" alt="dashboard">
                 Dashboard
             </div>
-            <div><img src="assets/home-account.svg" alt="home"> Home</div>
-            <div><img src="assets/account-outline.svg" alt="profile"> Profile</div>
-            <div><img src="assets/history.svg" alt="history"> History</div>
-            <div><img src="assets/calendar-check.svg" alt="tasks"> Tasks</div>
-            <div><img src="assets/account-group.svg" alt="communities"> Communities</div>
-            <div><img src="assets/cog.svg" alt="setting"> Settings</div>
-            <div><img src="assets/help-box.svg" alt="support"> Support</div>
-            <div><img src="assets/security.svg" alt="privacy"> Privacy</div>
+            <div class="dashboard_second">
+                <div><img src="assets/home-account.svg" alt="home"> Home</div>
+                <div><img src="assets/account-outline.svg" alt="profile"> Profile</div>
+                <div><img src="assets/history.svg" alt="history"> History</div>
+                <div><img src="assets/calendar-check.svg" alt="tasks"> Tasks</div>
+                <div><img src="assets/account-group.svg" alt="communities"> Communities</div>
+            </div>
+            <div class="dashboard_third">
+                <div><img src="assets/cog.svg" alt="setting"> Settings</div>
+                <div><img src="assets/help-box.svg" alt="support"> Support</div>
+                <div><img src="assets/security.svg" alt="privacy"> Privacy</div>
+            </div>
         </div>
 
 
         <div class="search_container">
             <div class="search_bar">
-                <img src="assets/magnify.svg" alt="search">
-                <input type="text">
-                <img class="pfp" src="assets/stars.png" alt="profile picture">
-                <p>Edwin Cheng</p>
+                <div class="left_search_bar">
+                    <img src="assets/magnify.svg" alt="search">
+                    <input type="text">
+                </div>
+                <div class="right_search_bar">
+                    <img class="pfp" src="assets/stars.png" alt="profile picture">
+                    <p>Edwin Cheng</p>
+                </div>
             </div>
-            <div class="profile_news">
-                <img class="bigger_pfp" src="assets/stars.png" alt="profile picture">
-                <div>Hi there,</div>
-                <div>Edwin Cheng (@edwncheng)</div>
 
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+            <div class="profile_news">
+                <div class="left_profile_news">
+                    <img class="pfp bigger_pfp" src="assets/stars.png" alt="profile picture">
+                    <div>
+                        <div id="intro">Hi there,</div>
+                        <div id="username">Edwin Cheng (@edwncheng)</div>
+                    </div>
+                </div>
+
+                <div class="right_profile_news">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
 
 
             <div class="main_content">
-                <div class="projects">
-                    <h2>Your Projects</h2>
-                    <div>
-                        <h4> Super Cool Project </h4>
-                        <img src="assets/star-check.svg" alt="favorite">
-                        <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
-                        <img src="assets/lan.svg" alt="share">
-                    </div>
-                    <div>
-                        <h4>Less Cool Project</h4>
-                        <img src="assets/star-check.svg" alt="favorite">
-                        <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
-                        <img src="assets/lan.svg" alt="share">
-                    </div>
-                    <div>
-                        <h4>Impossible App</h4>
-                        <img src="assets/star-check.svg" alt="favorite">
-                        <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
-                        <img src="assets/lan.svg" alt="share">
-                    </div>
-                    <div>
-                        <h4>Easy Peasy App</h4>
-                        <img src="assets/star-check.svg" alt="favorite">
-                        <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
-                        <img src="assets/lan.svg" alt="share">
-                    </div>
-                    <div>
-                        <h4>Ad Blocker</h4>
-                        <img src="assets/star-check.svg" alt="favorite">
-                        <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
-                        <img src="assets/lan.svg" alt="share">
-                    </div>
-                    <div>
-                        <h4>Money Maker</h4>
-                        <img src="assets/star-check.svg" alt="favorite">
-                        <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
-                        <img src="assets/lan.svg" alt="share">
+                <div class="entire_project">
+                    <h2 id="your_project">Your Projects</h2>
+                    <div class="projects">
+                        <div class="project">
+                            <h4> Super Cool Project </h4>
+                            <p>This do be a super cool project though</p>
+                            <div class="links">
+                                <img src="assets/star-check.svg" alt="favorite">
+                                <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
+                                <img src="assets/lan.svg" alt="share">
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h4>Less Cool Project</h4>
+                            <p>This do be a less cool project though</p>
+                            <div class="links">
+                                <img src="assets/star-check.svg" alt="favorite">
+                                <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
+                                <img src="assets/lan.svg" alt="share">
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h4>Impossible App</h4>
+                            <p>This do be an impossible project though</p>
+                            <div class="links">
+                                <img src="assets/star-check.svg" alt="favorite">
+                                <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
+                                <img src="assets/lan.svg" alt="share">
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h4>Easy Peasy App</h4>
+                            <p>This do be an easy peasy app though</p>
+                            <div class="links">
+                                <img src="assets/star-check.svg" alt="favorite">
+                                <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
+                                <img src="assets/lan.svg" alt="share">
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h4>Ad Blocker</h4>
+                            <p>This do be an ad blocker though</p>
+                            <div class="links">
+                                <img src="assets/star-check.svg" alt="favorite">
+                                <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
+                                <img src="assets/lan.svg" alt="share">
+                            </div>
+                        </div>
+                        <div class="project"> 
+                            <h4>Money Maker</h4>
+                            <p>This do be a money maker though</p>
+                            <div class="links">
+                                <img src="assets/star-check.svg" alt="favorite">
+                                <img src="assets/eye-arrow-left-outline.svg" alt="viewers">
+                                <img src="assets/lan.svg" alt="share">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="announcements">
-                    <h2>Announcements</h2>
-                    <div>Site Maintenance</div>
-                    <div>Community Share Day</div>
-                    <div>Updated Privacy Policy</div>
-                </div>
-
-                <div class="trending">
-                    <h2>Trending</h2>
-                    <div>@tegan</div>
-                    <div>@morgan</div>
-                    <div>@kendall</div>
-                    <div>@alex</div>
+                <div class="right_main_content">
+                    <div class="entire_announcements">
+                        <h2 id="your_project">Announcements</h2>
+                        <div class="announcements">
+                            <div>Site Maintenance</div>
+                            <div id="separator"></div>
+                            <div>Community Share Day</div>
+                            <div id="separator"></div>
+                            <div>Updated Privacy Policy</div>
+                        </div>
+                    </div>
+                    <div class="entire_trending">
+                        <h2 id="your_project">Trending</h2>
+                        <div class="trending">
+                            <div>@tegan</div>
+                            <div>@morgan</div>
+                            <div>@kendall</div>
+                            <div>@alex</div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
